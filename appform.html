@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Page 1 </title>
+<link rel="stylesheet" href="main.css">
+
+</div>
+<img src="logo.jpg" class="hello">  <!-- https://www.youtube.com/watch?v=NdUr0akpqAM used this video to make the logo on the menu -->
+<div class="navbar">
+  <a href="./home.html">Home</a>
+  <a href="./contact.html">Contact</a>
+  <a href="./staff.html">Staff and Skills</a>     <!-- make sure to include a dot at the start and ".html" to link the file-->
+  <a href="./training.html">Training Courses</a>
+  <a href="./appform.html">Apply Here</a>
+  </div>
+ <!-- Application content below (This has been edited from W3Schools link on the right: https://www.w3schools.com/howto/howto_css_contact_form.asp)-->
+<div class="containera">
+ <div class="container">
+  <form action="action_page.html">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+	
+	
+	<!-- the pattern for the phone number format has been retrieved from this link https://www.html5pattern.com/Phones-->
+    <label for="phonenumber">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="e.g (07700 900560)" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" required >
+
+
+
+    <label for="gender">Gender</label>
+    <select id="country" name="country" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+	
+	<label for="jobrole">Job Role</label>
+    <select id="jobrole" name="jobrole" required>
+      <option value="engineer">Engineer</option>
+      <option value="sengineer">Senior Engineer</option>
+      <option value="wd">Web Developer</option>
+	  <option value="swd">Senior Web Developer</option>
+	  <option value="itsupport">IT support</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  </form>
+ </div>
+</div>
+
+<div class="jobroles">
+	<section>
+		<h3>
+		Job Role List (click to view more)
+		</h3>
+		<p  class="jroles">
+		<a href="./role1.html">
+		&#x2022; Engineer
+		</a>
+		</p>
+		<p  class="jroles">
+		<a href="./role2.html">
+		&#x2022; Senior Engineer
+		</a>
+		</p>
+		<p  class="jroles">
+		<a href="./role3.html">
+		&#x2022; Web Developer
+		</a>
+		</p>
+		<p  class="jroles">
+		<a href="./role4.html">
+		&#x2022; Senior Web Developer
+		</a>
+		</p>
+		<p  class="jroles">
+		<a href="./role5.html">
+		&#x2022; IT Support
+		</a>
+		</p>
+	</section>
+</div>
+
+
+ <!-- Horizontal Images below -->
+ 
+ <div class="rowsss">
+  <div class="columnsss">
+    <img src="building.jpg" alt="Place1" style="width:100%">
+  </div>
+  <div class="columnsss">
+    <img src="building1.jpg" alt="Place2" style="width:100%">
+  </div>
+  <div class="columnsss">
+    <img src="parking.jpg" alt="Place3" style="width:100%">
+  </div>
+</div>
+ 
+ <!-- Footer below-->
+<footer>
+	<div class="footer">
+		<p>Address: 43 Victoria Road, SWINDON, SN92 6BQ</p>
+		<p>Phone Number: 07523189211</p>
+		<p>Email: service@hotbeansweb.com</p>
+	</div>
+</footer>
+</html>
